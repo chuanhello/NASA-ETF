@@ -2,8 +2,8 @@ name: Daily NASA ETF & SpaceX Tracker
 
 on:
   schedule:
-    # Runs daily at 23:00 UTC (6:00 PM EST / 7:00 PM EDT), after market close
-    - cron: '0 23 * * *'
+    # Runs Monday through Friday at 23:00 UTC (6:00 PM EST / 7:00 PM EDT), after market close
+    - cron: '0 23 * * 1-5'
   workflow_dispatch:
     # Allows manual trigger of the action from GitHub repository page
 
